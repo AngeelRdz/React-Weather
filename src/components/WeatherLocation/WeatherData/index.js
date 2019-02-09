@@ -6,8 +6,10 @@ import { CLOUD } from "./../../../constants/weathers";
 
 import PropTypes from "prop-types";
 
+import './styles.css';
+
 const WeatherData = () => (
-  <div>
+  <div className="weatherDataCount">
     <h2>Weather Data</h2>
     <WeatherTemperature temperature={20} weatherState={CLOUD} />
     <WeatherExtraInfo humidity={80} wind={"10 m/s"} />
