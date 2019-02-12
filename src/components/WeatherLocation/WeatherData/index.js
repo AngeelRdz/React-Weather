@@ -9,8 +9,7 @@ import PropTypes from "prop-types";
 import './styles.css';
 
 const WeatherData = () => (
-  <div className="weatherDataCount">
-    <h2>Weather Data</h2>
+  <div className="weatherDataCont">
     <WeatherTemperature temperature={20} weatherState={CLOUD} />
     <WeatherExtraInfo humidity={80} wind={"10 m/s"} />
   </div>

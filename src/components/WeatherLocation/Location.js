@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./styles.css";
+
 const Location = (props) => {
   // console.log(props);
   // debugger;
@@ -9,7 +11,7 @@ const Location = (props) => {
   const {city} = props;
 
   return (
-    <div>
+    <div className="locationCont">
       <h1>{city}</h1>
     </div>
   );
