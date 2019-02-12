@@ -4,10 +4,19 @@ import WeatherData from './WeatherData';
 
 import './styles.css';
 
+import { CLOUD } from "./../../constants/weathers";
+
+const data = {
+  temperature: 5,
+  weatherState: CLOUD,
+  humidity: 10,
+  wind: "10 m/s"
+};
+
 const WeatherLocation = () => (
   <div className="weatherLocationCont">
     <Location city={"Ciudad de México"} />
-    <WeatherData />
+    <WeatherData data={data} />
   </div>
 );
 
